@@ -26,28 +26,33 @@ animations = [ {
 "name": "jump",
 "speed": 1.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "run",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "fall",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8.5, 10.5 )
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( 20, 16 )
 script = ExtResource( 13 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -2.5, 5.5 )
+position = Vector2( -2, 6 )
 shape = SubResource( 2 )
