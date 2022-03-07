@@ -914,6 +914,7 @@ editor_draw_drag_margin = true
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 384, 0 )
 
 [node name="Back" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( 194, 72 )
