@@ -1,8 +1,9 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://artwork/Environment/tileset-sliced.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://artwork/Environment/back.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Cherry.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -906,6 +907,7 @@ position = Vector2( 117, 60 )
 position = Vector2( -1, 5 )
 current = true
 limit_left = 0
+limit_top = 0
 limit_bottom = 180
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
@@ -917,5 +919,29 @@ editor_draw_drag_margin = true
 motion_mirroring = Vector2( 384, 0 )
 
 [node name="Back" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 194, 72 )
+position = Vector2( 193, 71 )
 texture = ExtResource( 3 )
+
+[node name="Cherry" parent="." instance=ExtResource( 4 )]
+position = Vector2( 141, 124 )
+
+[node name="Cherry2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 165, 124 )
+
+[node name="Cherry3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 190, 123 )
+
+[node name="Cherry4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 213, 124 )
+
+[node name="Cherry5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 284, 92 )
+
+[node name="Cherry6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 363, 119 )
+
+[node name="Cherry7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 390, 118 )
+
+[node name="Cherry8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 419, 117 )
