@@ -23,9 +23,9 @@ func _physics_process(delta):
 		coyote_timer.start()
 
 func _input(event):
-	if event.is_action_pressed("jump"):
+	if event.is_action_pressed("ui_accept"):
 		jump_request_time.start();
-	if event.is_action_released("jump") and velocity.y < -jump_force /2:
+	if event.is_action_released("ui_accept") and velocity.y < -jump_force /2:
 		velocity.y =  -jump_force / 2
 	
 func _process(delta):
