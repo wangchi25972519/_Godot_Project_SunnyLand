@@ -1,0 +1,38 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://artwork/Sprites/Enemies/frog/idle/frog-idle-1.png" type="Texture" id=2]
+[ext_resource path="res://artwork/Sprites/Enemies/frog/idle/frog-idle-2.png" type="Texture" id=3]
+[ext_resource path="res://artwork/Sprites/Enemies/frog/idle/frog-idle-3.png" type="Texture" id=4]
+[ext_resource path="res://artwork/Sprites/Enemies/frog/idle/frog-idle-4.png" type="Texture" id=5]
+[ext_resource path="res://artwork/Sprites/Enemies/frog/jump/frog-jump-1.png" type="Texture" id=6]
+[ext_resource path="res://artwork/Sprites/Enemies/frog/jump/frog-jump-2.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Frog.gd" type="Script" id=8]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 12.5, 9 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "idle",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[node name="Frog" instance=ExtResource( 1 )]
+script = ExtResource( 8 )
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2( 45.5, 50 )
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" parent="." index="1"]
+position = Vector2( 47, 48 )
+frames = SubResource( 1 )
+animation = "idle"

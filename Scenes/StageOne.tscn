@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://artwork/Environment/tileset-sliced.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -85,11 +85,44 @@ points = PoolVector2Array( 0, 0, 0, 0, 16, 16, 16, 32, 0, 32 )
 [sub_resource type="ConvexPolygonShape2D" id=30]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
+[sub_resource type="ConvexPolygonShape2D" id=43]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=44]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=45]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=46]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
 [sub_resource type="ConvexPolygonShape2D" id=31]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 
+[sub_resource type="ConvexPolygonShape2D" id=38]
+points = PoolVector2Array( 16, 0, 16, 16, 0, 16, 0, 8, 0, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+points = PoolVector2Array( 2, 7, 2, 6, 4, 6, 4, 5, 6, 5, 6, 4, 8, 4, 8, 3, 10, 3, 10, 2, 12, 2, 12, 1, 14, 1, 14, 0, 16, 0, 16, 8, 0, 8, 0, 7, 0, 7 )
+
+[sub_resource type="ConvexPolygonShape2D" id=39]
+points = PoolVector2Array( 16, 8, 16, 16, 0, 16, 0, 0, 0, 0 )
+
 [sub_resource type="ConvexPolygonShape2D" id=32]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=40]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=41]
+points = PoolVector2Array( 0, 0, 0, 0, 32, 0, 32, 7, 0, 7 )
+
+[sub_resource type="ConvexPolygonShape2D" id=42]
+points = PoolVector2Array( 32, 7, 0, 7, 0, 0, 32, 0, 32, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=33]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -721,7 +754,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 30/texture = ExtResource( 1 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
-30/region = Rect2( 304, 16, 32, 32 )
+30/region = Rect2( 320, 16, 1, 1 )
 30/tile_mode = 0
 30/occluder_offset = Vector2( 0, 0 )
 30/navigation_offset = Vector2( 0, 0 )
@@ -731,20 +764,6 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 30/shape_one_way_margin = 0.0
 30/shapes = [  ]
 30/z_index = 0
-31/name = "tileset-sliced.png 31"
-31/texture = ExtResource( 1 )
-31/tex_offset = Vector2( 0, 0 )
-31/modulate = Color( 1, 1, 1, 1 )
-31/region = Rect2( 352, 16, 32, 32 )
-31/tile_mode = 0
-31/occluder_offset = Vector2( 0, 0 )
-31/navigation_offset = Vector2( 0, 0 )
-31/shape_offset = Vector2( 0, 0 )
-31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-31/shape_one_way = false
-31/shape_one_way_margin = 0.0
-31/shapes = [  ]
-31/z_index = 0
 32/name = "tileset-sliced.png 32"
 32/texture = ExtResource( 1 )
 32/tex_offset = Vector2( 0, 0 )
@@ -793,20 +812,6 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 33/z_index = 0
-34/name = "tileset-sliced.png 34"
-34/texture = ExtResource( 1 )
-34/tex_offset = Vector2( 0, 0 )
-34/modulate = Color( 1, 1, 1, 1 )
-34/region = Rect2( 144, 16, 32, 16 )
-34/tile_mode = 0
-34/occluder_offset = Vector2( 0, 0 )
-34/navigation_offset = Vector2( 0, 0 )
-34/shape_offset = Vector2( 0, 0 )
-34/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-34/shape_one_way = false
-34/shape_one_way_margin = 0.0
-34/shapes = [  ]
-34/z_index = 0
 35/name = "tileset-sliced.png 35"
 35/texture = ExtResource( 1 )
 35/tex_offset = Vector2( 0, 0 )
@@ -849,20 +854,6 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 37/shape_one_way_margin = 0.0
 37/shapes = [  ]
 37/z_index = 0
-38/name = "tileset-sliced.png 38"
-38/texture = ExtResource( 1 )
-38/tex_offset = Vector2( 0, 0 )
-38/modulate = Color( 1, 1, 1, 1 )
-38/region = Rect2( 128, 80, 32, 16 )
-38/tile_mode = 0
-38/occluder_offset = Vector2( 0, 0 )
-38/navigation_offset = Vector2( 0, 0 )
-38/shape_offset = Vector2( 0, 0 )
-38/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-38/shape_one_way = false
-38/shape_one_way_margin = 0.0
-38/shapes = [  ]
-38/z_index = 0
 39/name = "tileset-sliced.png 39"
 39/texture = ExtResource( 1 )
 39/tex_offset = Vector2( 0, 0 )
@@ -901,9 +892,16 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 41/navigation_offset = Vector2( 0, 0 )
 41/shape_offset = Vector2( 0, 0 )
 41/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+41/shape = SubResource( 43 )
 41/shape_one_way = false
-41/shape_one_way_margin = 0.0
-41/shapes = [  ]
+41/shape_one_way_margin = 1.0
+41/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 43 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 41/z_index = 0
 42/name = "tileset-sliced.png 42"
 42/texture = ExtResource( 1 )
@@ -915,9 +913,16 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 42/navigation_offset = Vector2( 0, 0 )
 42/shape_offset = Vector2( 0, 0 )
 42/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+42/shape = SubResource( 44 )
 42/shape_one_way = false
-42/shape_one_way_margin = 0.0
-42/shapes = [  ]
+42/shape_one_way_margin = 1.0
+42/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 44 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 42/z_index = 0
 43/name = "tileset-sliced.png 43"
 43/texture = ExtResource( 1 )
@@ -929,9 +934,16 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 43/navigation_offset = Vector2( 0, 0 )
 43/shape_offset = Vector2( 0, 0 )
 43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+43/shape = SubResource( 45 )
 43/shape_one_way = false
-43/shape_one_way_margin = 0.0
-43/shapes = [  ]
+43/shape_one_way_margin = 1.0
+43/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 45 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 43/z_index = 0
 44/name = "tileset-sliced.png 44"
 44/texture = ExtResource( 1 )
@@ -943,9 +955,16 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 44/navigation_offset = Vector2( 0, 0 )
 44/shape_offset = Vector2( 0, 0 )
 44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+44/shape = SubResource( 46 )
 44/shape_one_way = false
-44/shape_one_way_margin = 0.0
-44/shapes = [  ]
+44/shape_one_way_margin = 1.0
+44/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 46 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 44/z_index = 0
 45/name = "tileset-sliced.png 45"
 45/texture = ExtResource( 1 )
@@ -957,9 +976,16 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 45/navigation_offset = Vector2( 0, 0 )
 45/shape_offset = Vector2( 0, 0 )
 45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+45/shape = SubResource( 47 )
 45/shape_one_way = false
-45/shape_one_way_margin = 0.0
-45/shapes = [  ]
+45/shape_one_way_margin = 1.0
+45/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 47 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 45/z_index = 0
 46/name = "tileset-sliced.png 46"
 46/texture = ExtResource( 1 )
@@ -993,7 +1019,7 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 48/texture = ExtResource( 1 )
 48/tex_offset = Vector2( 0, 0 )
 48/modulate = Color( 1, 1, 1, 1 )
-48/region = Rect2( 304, 16, 16, 16 )
+48/region = Rect2( 304, 32, 16, 16 )
 48/tile_mode = 0
 48/occluder_offset = Vector2( 0, 0 )
 48/navigation_offset = Vector2( 0, 0 )
@@ -1003,25 +1029,11 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 48/shape_one_way_margin = 0.0
 48/shapes = [  ]
 48/z_index = 0
-49/name = "tileset-sliced.png 49"
-49/texture = ExtResource( 1 )
-49/tex_offset = Vector2( 0, 0 )
-49/modulate = Color( 1, 1, 1, 1 )
-49/region = Rect2( 352, 16, 16, 16 )
-49/tile_mode = 0
-49/occluder_offset = Vector2( 0, 0 )
-49/navigation_offset = Vector2( 0, 0 )
-49/shape_offset = Vector2( 0, 0 )
-49/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-49/shape_one_way = false
-49/shape_one_way_margin = 0.0
-49/shapes = [  ]
-49/z_index = 0
 50/name = "tileset-sliced.png 50"
 50/texture = ExtResource( 1 )
 50/tex_offset = Vector2( 0, 0 )
 50/modulate = Color( 1, 1, 1, 1 )
-50/region = Rect2( 320, 16, 16, 16 )
+50/region = Rect2( 320, 32, 16, 16 )
 50/tile_mode = 0
 50/occluder_offset = Vector2( 0, 0 )
 50/navigation_offset = Vector2( 0, 0 )
@@ -1031,6 +1043,230 @@ points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
 50/shape_one_way_margin = 0.0
 50/shapes = [  ]
 50/z_index = 0
+51/name = "tileset-sliced.png 51"
+51/texture = ExtResource( 1 )
+51/tex_offset = Vector2( 0, 0 )
+51/modulate = Color( 1, 1, 1, 1 )
+51/region = Rect2( 320, 16, 16, 16 )
+51/tile_mode = 0
+51/occluder_offset = Vector2( 0, 0 )
+51/navigation_offset = Vector2( 0, 0 )
+51/shape_offset = Vector2( 0, 0 )
+51/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+51/shape = SubResource( 38 )
+51/shape_one_way = false
+51/shape_one_way_margin = 1.0
+51/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 38 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+51/z_index = 0
+52/name = "tileset-sliced.png 52"
+52/texture = ExtResource( 1 )
+52/tex_offset = Vector2( 0, 0 )
+52/modulate = Color( 1, 1, 1, 1 )
+52/region = Rect2( 304, 24, 16, 8 )
+52/tile_mode = 0
+52/occluder_offset = Vector2( 0, 0 )
+52/navigation_offset = Vector2( 0, 0 )
+52/shape_offset = Vector2( 0, 0 )
+52/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+52/shape = SubResource( 37 )
+52/shape_one_way = false
+52/shape_one_way_margin = 1.0
+52/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 37 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+52/z_index = 0
+53/name = "tileset-sliced.png 53"
+53/texture = ExtResource( 1 )
+53/tex_offset = Vector2( 0, 0 )
+53/modulate = Color( 1, 1, 1, 1 )
+53/region = Rect2( 352, 16, 16, 16 )
+53/tile_mode = 0
+53/occluder_offset = Vector2( 0, 0 )
+53/navigation_offset = Vector2( 0, 0 )
+53/shape_offset = Vector2( 0, 0 )
+53/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+53/shape = SubResource( 39 )
+53/shape_one_way = false
+53/shape_one_way_margin = 1.0
+53/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 39 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+53/z_index = 0
+54/name = "tileset-sliced.png 54"
+54/texture = ExtResource( 1 )
+54/tex_offset = Vector2( 0, 0 )
+54/modulate = Color( 1, 1, 1, 1 )
+54/region = Rect2( 368, 16, 16, 16 )
+54/tile_mode = 0
+54/occluder_offset = Vector2( 0, 0 )
+54/navigation_offset = Vector2( 0, 0 )
+54/shape_offset = Vector2( 0, 0 )
+54/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+54/shape_one_way = false
+54/shape_one_way_margin = 0.0
+54/shapes = [  ]
+54/z_index = 0
+55/name = "tileset-sliced.png 55"
+55/texture = ExtResource( 1 )
+55/tex_offset = Vector2( 0, 0 )
+55/modulate = Color( 1, 1, 1, 1 )
+55/region = Rect2( 352, 32, 16, 16 )
+55/tile_mode = 0
+55/occluder_offset = Vector2( 0, 0 )
+55/navigation_offset = Vector2( 0, 0 )
+55/shape_offset = Vector2( 0, 0 )
+55/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+55/shape_one_way = false
+55/shape_one_way_margin = 0.0
+55/shapes = [  ]
+55/z_index = 0
+56/name = "tileset-sliced.png 56"
+56/texture = ExtResource( 1 )
+56/tex_offset = Vector2( 0, 0 )
+56/modulate = Color( 1, 1, 1, 1 )
+56/region = Rect2( 352, 64, 16, 16 )
+56/tile_mode = 0
+56/occluder_offset = Vector2( 0, 0 )
+56/navigation_offset = Vector2( 0, 0 )
+56/shape_offset = Vector2( 0, 0 )
+56/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+56/shape_one_way = false
+56/shape_one_way_margin = 0.0
+56/shapes = [  ]
+56/z_index = 0
+57/name = "tileset-sliced.png 57"
+57/texture = ExtResource( 1 )
+57/tex_offset = Vector2( 0, 0 )
+57/modulate = Color( 1, 1, 1, 1 )
+57/region = Rect2( 320, 64, 16, 16 )
+57/tile_mode = 0
+57/occluder_offset = Vector2( 0, 0 )
+57/navigation_offset = Vector2( 0, 0 )
+57/shape_offset = Vector2( 0, 0 )
+57/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+57/shape_one_way = false
+57/shape_one_way_margin = 0.0
+57/shapes = [  ]
+57/z_index = 0
+58/name = "tileset-sliced.png 58"
+58/texture = ExtResource( 1 )
+58/tex_offset = Vector2( 0, 0 )
+58/modulate = Color( 1, 1, 1, 1 )
+58/region = Rect2( 352, 80, 16, 16 )
+58/tile_mode = 0
+58/occluder_offset = Vector2( 0, 0 )
+58/navigation_offset = Vector2( 0, 0 )
+58/shape_offset = Vector2( 0, 0 )
+58/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+58/shape_one_way = false
+58/shape_one_way_margin = 0.0
+58/shapes = [  ]
+58/z_index = 0
+59/name = "tileset-sliced.png 59"
+59/texture = ExtResource( 1 )
+59/tex_offset = Vector2( 0, 0 )
+59/modulate = Color( 1, 1, 1, 1 )
+59/region = Rect2( 320, 80, 16, 16 )
+59/tile_mode = 0
+59/occluder_offset = Vector2( 0, 0 )
+59/navigation_offset = Vector2( 0, 0 )
+59/shape_offset = Vector2( 0, 0 )
+59/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+59/shape_one_way = false
+59/shape_one_way_margin = 0.0
+59/shapes = [  ]
+59/z_index = 0
+60/name = "tileset-sliced.png 60"
+60/texture = ExtResource( 1 )
+60/tex_offset = Vector2( 0, 0 )
+60/modulate = Color( 1, 1, 1, 1 )
+60/region = Rect2( 368, 32, 16, 16 )
+60/tile_mode = 0
+60/occluder_offset = Vector2( 0, 0 )
+60/navigation_offset = Vector2( 0, 0 )
+60/shape_offset = Vector2( 0, 0 )
+60/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+60/shape_one_way = false
+60/shape_one_way_margin = 0.0
+60/shapes = [  ]
+60/z_index = 0
+61/name = "tileset-sliced.png 61"
+61/texture = ExtResource( 1 )
+61/tex_offset = Vector2( 0, 0 )
+61/modulate = Color( 1, 1, 1, 1 )
+61/region = Rect2( 112, 80, 16, 16 )
+61/tile_mode = 0
+61/occluder_offset = Vector2( 0, 0 )
+61/navigation_offset = Vector2( 0, 0 )
+61/shape_offset = Vector2( 0, 0 )
+61/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+61/shape = SubResource( 40 )
+61/shape_one_way = false
+61/shape_one_way_margin = 1.0
+61/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 40 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+61/z_index = 0
+62/name = "tileset-sliced.png 62"
+62/texture = ExtResource( 1 )
+62/tex_offset = Vector2( 0, 0 )
+62/modulate = Color( 1, 1, 1, 1 )
+62/region = Rect2( 144, 16, 32, 7 )
+62/tile_mode = 0
+62/occluder_offset = Vector2( 0, 0 )
+62/navigation_offset = Vector2( 0, 0 )
+62/shape_offset = Vector2( 0, 0 )
+62/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+62/shape = SubResource( 41 )
+62/shape_one_way = false
+62/shape_one_way_margin = 1.0
+62/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 41 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+62/z_index = 0
+63/name = "tileset-sliced.png 63"
+63/texture = ExtResource( 1 )
+63/tex_offset = Vector2( 0, 0 )
+63/modulate = Color( 1, 1, 1, 1 )
+63/region = Rect2( 128, 80, 32, 7 )
+63/tile_mode = 0
+63/occluder_offset = Vector2( 0, 0 )
+63/navigation_offset = Vector2( 0, 0 )
+63/shape_offset = Vector2( 0, 0 )
+63/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+63/shape = SubResource( 42 )
+63/shape_one_way = false
+63/shape_one_way_margin = 1.0
+63/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 42 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+63/z_index = 0
 
 [node name="World" type="Node2D"]
 
@@ -1039,7 +1275,7 @@ position = Vector2( 1, 0 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 196649, 20, 0, 196650, 21, 0, 262185, 22, 0, 262186, 23, 0, 262192, 0, 0, 262193, 2, 0, 262194, 2, 0, 262195, 2, 0, 262196, 2, 0, 262197, 2, 0, 262198, 2, 0, 262199, 2, 0, 262200, 2, 0, 262201, 2, 0, 262202, 2, 0, 262203, 2, 0, 262204, 1, 0, 327728, 15, 0, 327729, 27, 0, 327730, 27, 0, 327731, 27, 0, 327732, 27, 0, 327733, 27, 0, 327734, 27, 0, 327735, 27, 0, 327736, 27, 0, 327737, 27, 0, 327738, 27, 0, 327739, 27, 0, 327740, 13, 0, 393255, 2, 0, 393256, 2, 0, 393257, 2, 0, 393258, 2, 0, 393259, 2, 0, 393260, 2, 0, 393261, 2, 0, 393264, 15, 0, 393265, 27, 0, 393266, 26, 0, 393267, 26, 0, 393268, 26, 0, 393269, 26, 0, 393270, 26, 0, 393271, 26, 0, 393272, 26, 0, 393273, 26, 0, 393274, 26, 0, 393275, 27, 0, 393276, 13, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458800, 15, 0, 458801, 27, 0, 458802, 26, 0, 458803, 14, 0, 458804, 14, 0, 458805, 14, 0, 458806, 14, 0, 458807, 14, 0, 458808, 14, 0, 458809, 14, 0, 458810, 26, 0, 458811, 27, 0, 458812, 13, 0, 458813, 38, 0, 458815, 38, 0, 458829, 41, 0, 458830, 42, 0, 458831, 43, 0, 524310, 24, 0, 524314, 24, 0, 524321, 2, 0, 524322, 2, 0, 524323, 2, 0, 524324, 2, 0, 524336, 15, 0, 524337, 27, 0, 524338, 26, 0, 524339, 14, 0, 524340, 14, 0, 524341, 14, 0, 524342, 14, 0, 524343, 14, 0, 524344, 14, 0, 524345, 14, 0, 524346, 26, 0, 524347, 27, 0, 524348, 13, 0, 524355, 50, 0, 524356, 42, 0, 524357, 42, 0, 524358, 42, 0, 524359, 42, 0, 524360, 49, 0, 589828, 24, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589835, 2, 0, 589836, 2, 0, 589839, 25, 0, 589844, 30, 0, 589846, 1, 0, 589847, 1, 0, 589848, 1, 0, 589849, 1, 0, 589850, 1, 0, 589851, 31, 0, 589872, 15, 0, 589873, 27, 0, 589874, 26, 0, 589875, 26, 0, 589876, 26, 0, 589877, 26, 0, 589878, 26, 0, 589879, 26, 0, 589880, 26, 0, 589881, 26, 0, 589882, 26, 0, 589883, 27, 0, 589884, 13, 0, 589892, 39, 0, 589894, 40, 0, 655360, 0, 0, 655361, 1, 0, 655362, 1, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655366, 2, 0, 655367, 2, 0, 655368, 6, 0, 655369, 6, 0, 655370, 6, 0, 655371, 7, 0, 655372, 7, 0, 655373, 2, 0, 655374, 2, 0, 655375, 2, 0, 655376, 2, 0, 655377, 2, 0, 655378, 2, 0, 655379, 2, 0, 655382, 5, 0, 655383, 5, 0, 655384, 5, 0, 655385, 5, 0, 655386, 5, 0, 655389, 2, 0, 655390, 2, 0, 655391, 2, 0, 655408, 15, 0, 655409, 27, 0, 655410, 27, 0, 655411, 27, 0, 655412, 27, 0, 655413, 27, 0, 655414, 27, 0, 655415, 27, 0, 655416, 27, 0, 655417, 27, 0, 655418, 27, 0, 655419, 27, 0, 655420, 13, 0, 720896, 3, 0, 720897, 3, 0, 720898, 3, 0, 720899, 3, 0, 720900, 3, 0, 720901, 3, 0, 720902, 3, 0, 720903, 3, 0, 720904, 3, 0, 720905, 3, 0, 720906, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 720913, 3, 0, 720914, 3, 0, 720915, 3, 0, 720916, 8, 0, 720917, 8, 0, 720918, 8, 0, 720919, 8, 0, 720920, 8, 0, 720921, 8, 0, 720922, 8, 0, 720923, 8, 0, 720924, 8, 0, 720925, 8, 0, 720926, 8, 0, 720927, 8, 0, 720944, 16, 0, 720945, 17, 0, 720946, 17, 0, 720947, 17, 0, 720948, 17, 0, 720949, 17, 0, 720950, 17, 0, 720951, 17, 0, 720952, 17, 0, 720953, 17, 0, 720954, 17, 0, 720955, 17, 0, 720956, 18, 0 )
+tile_data = PoolIntArray( 196649, 20, 0, 196650, 21, 0, 262185, 22, 0, 262186, 23, 0, 262192, 0, 0, 262193, 2, 0, 262194, 2, 0, 262195, 2, 0, 262196, 2, 0, 262197, 2, 0, 262198, 2, 0, 262199, 2, 0, 262200, 2, 0, 262201, 2, 0, 262202, 2, 0, 262203, 2, 0, 262204, 1, 0, 327728, 15, 0, 327729, 27, 0, 327730, 27, 0, 327731, 27, 0, 327732, 27, 0, 327733, 27, 0, 327734, 27, 0, 327735, 27, 0, 327736, 27, 0, 327737, 27, 0, 327738, 27, 0, 327739, 27, 0, 327740, 13, 0, 327753, 1, 0, 393255, 2, 0, 393256, 2, 0, 393257, 2, 0, 393258, 2, 0, 393259, 2, 0, 393260, 2, 0, 393261, 2, 0, 393264, 15, 0, 393265, 27, 0, 393266, 26, 0, 393267, 26, 0, 393268, 26, 0, 393269, 26, 0, 393270, 26, 0, 393271, 26, 0, 393272, 26, 0, 393273, 26, 0, 393274, 26, 0, 393275, 27, 0, 393276, 13, 0, 393277, 62, 0, 393279, 62, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458800, 15, 0, 458801, 27, 0, 458802, 26, 0, 458803, 14, 0, 458804, 14, 0, 458805, 14, 0, 458806, 14, 0, 458807, 14, 0, 458808, 14, 0, 458809, 14, 0, 458810, 26, 0, 458811, 27, 0, 458812, 13, 0, 458813, 38, 0, 458815, 38, 0, 458829, 41, 0, 458830, 42, 0, 458831, 43, 0, 524310, 24, 0, 524314, 24, 0, 524321, 2, 0, 524322, 2, 0, 524323, 2, 0, 524324, 2, 0, 524336, 15, 0, 524337, 27, 0, 524338, 26, 0, 524339, 14, 0, 524340, 14, 0, 524341, 14, 0, 524342, 14, 0, 524343, 14, 0, 524344, 14, 0, 524345, 14, 0, 524346, 26, 0, 524347, 27, 0, 524348, 13, 0, 524356, 42, 0, 524357, 42, 0, 524358, 42, 0, 524359, 42, 0, 524360, 49, 0, 589828, 24, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589835, 2, 0, 589836, 2, 0, 589839, 25, 0, 589844, 30, 0, 589845, 51, 0, 589846, 1, 0, 589847, 1, 0, 589848, 1, 0, 589849, 1, 0, 589850, 1, 0, 589851, 53, 0, 589872, 15, 0, 589873, 27, 0, 589874, 26, 0, 589875, 26, 0, 589876, 26, 0, 589877, 26, 0, 589878, 26, 0, 589879, 26, 0, 589880, 26, 0, 589881, 26, 0, 589882, 26, 0, 589883, 27, 0, 589884, 13, 0, 589892, 39, 0, 589894, 40, 0, 589899, 1, 0, 655360, 0, 0, 655361, 1, 0, 655362, 1, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655366, 2, 0, 655367, 2, 0, 655368, 6, 0, 655369, 6, 0, 655370, 6, 0, 655371, 7, 0, 655372, 7, 0, 655373, 2, 0, 655374, 2, 0, 655375, 2, 0, 655376, 2, 0, 655377, 2, 0, 655378, 2, 0, 655379, 2, 0, 655382, 5, 0, 655383, 5, 0, 655384, 5, 0, 655385, 5, 0, 655386, 5, 0, 655389, 2, 0, 655390, 2, 0, 655391, 2, 0, 655408, 15, 0, 655409, 27, 0, 655410, 27, 0, 655411, 27, 0, 655412, 27, 0, 655413, 27, 0, 655414, 27, 0, 655415, 27, 0, 655416, 27, 0, 655417, 27, 0, 655418, 27, 0, 655419, 27, 0, 655420, 13, 0, 720896, 3, 0, 720897, 3, 0, 720898, 3, 0, 720899, 3, 0, 720900, 3, 0, 720901, 3, 0, 720902, 3, 0, 720903, 3, 0, 720904, 3, 0, 720905, 3, 0, 720906, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 720913, 3, 0, 720914, 3, 0, 720915, 3, 0, 720916, 8, 0, 720917, 8, 0, 720918, 8, 0, 720919, 8, 0, 720920, 8, 0, 720921, 8, 0, 720922, 8, 0, 720923, 8, 0, 720924, 8, 0, 720925, 8, 0, 720926, 8, 0, 720927, 8, 0, 720944, 16, 0, 720945, 17, 0, 720946, 17, 0, 720947, 17, 0, 720948, 17, 0, 720949, 17, 0, 720950, 17, 0, 720951, 17, 0, 720952, 17, 0, 720953, 17, 0, 720954, 17, 0, 720955, 17, 0, 720956, 18, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 117, 60 )
