@@ -18,16 +18,19 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 7.0
+radius = 8.0
 
 [node name="Cherry" type="Area2D"]
+collision_layer = 16
+collision_mask = 2
 script = ExtResource( 8 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3, -1 )
+position = Vector2( -1, 0 )
 shape = SubResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_Cherry_body_entered"]

@@ -17,15 +17,22 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "idle",
-"speed": 7.0
+"speed": 4.5
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "jump",
-"speed": 5.0
+"speed": 4.5
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "fall",
+"speed": 4.5
 } ]
 
 [node name="Frog" instance=ExtResource( 1 )]
+collision_layer = 0
+collision_mask = 3
 script = ExtResource( 8 )
 
 [node name="CollisionShape2D" parent="." index="0"]
@@ -38,3 +45,5 @@ frames = SubResource( 1 )
 animation = "idle"
 frame = 3
 playing = true
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
