@@ -9,6 +9,7 @@ const  jump_force = 300
 
 var velocity = Vector2.ZERO
 var is_jumping = false
+var cherry_count = 0
 
 onready var sprite = $AnimatedSprite
 onready var coyote_timer = $CoyoteTimer
@@ -54,4 +55,9 @@ func _process(delta):
 		
 	if direction != 0:
 		sprite.flip_h = direction < 0
+		
+		
+func add_sherry():
+	cherry_count = cherry_count +1
+	print("I now have this many conis: ", cherry_count)
 		
